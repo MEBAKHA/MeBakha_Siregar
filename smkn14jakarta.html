@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SAYA</title>
+    <link rel="icon" type="image/x-icon" href="asset/img/favicon gw.png">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    :root{
+        --gradient: linear-gradient(90deg, rgba(255, 111, 111, 0.966)7.8%, rgb(255, 246, 81) 100.3%);
+    }
+    body{
+      min-height: 100vh; 
+      background-color: aliceblue;
+      background-image: var(--gradient);
+      background-size: 200%;
+      animation: gradientAnimation 2s ease infinite alternate;
+      
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+
+    #me{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 1.5rem;
+
+    
+    }
+
+    #me:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+        text-transform: uppercase;
+
+    }
+
+    
+</style>
+
+<body style="font-family:'Inter', sans-serif;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down">
+       <div class="container">
+            <a  id="me"  class="navbar-brand fw-bold" href="index.html">Rakha Siregar</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" data-aos="fade-down">
+                        <a target="_blank" class="nav-link" href="https://www.tiktok.com/@mebakha_siregar">
+                            <i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i>TikTok
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://github.com/MEBAKHA">
+                            <i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i>GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://youtube.com/@mebakhaaja">
+                            <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff;"></i> YouTube
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://www.instagram.com/mebakha_siregar/">
+                            <i class="fa-brands fa-instagram fa-bounce" style="color: #ffffff;"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="container py-5">
+        <div class="row align-items-center" data-aos="fade-up">
+            
+            <!-- Kiri: Teks -->
+            <div class="col-md-6 mb-4">
+                <h1 class="fw-bold text-white " style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">SMK NEGERI 14 JAKARTA</h1>
+                <p>
+                   SMK Negeri 14 Jakarta adalah SMK Pusat Keunggulan di Jakarta Pusat yang berlokasi di Jl. Percetakan Negara IIA No.2, Johar Baru, terkenal dengan program keahliannya seperti Teknik Komputer dan Jaringan, Multimedia, Otomatisasi dan Tata Kelola Perkantoran (OTKP), Pemasaran, dan Tata Boga, serta aktif dalam kegiatan industri dan memiliki Unit Produksi dan Koperasi
+                    <a href="https://smkn14jakarta.sch.id/">sumber</a>
+                </p>
+            </div>
+
+            <!-- Kanan: Gambar -->
+            <div class="col-md-6 mb-4">
+                <img src="asset/img/smkn 14 jakarta .png" alt="MA Al-Gozali Biru Majalaya" class="img-fluid rounded" data-aos="fade-left" aos-delay="200">
+            </div>
+        </div>
+            <!--Anggota team (horizontal layout)-->
+            <div id="team-algiva" class="d-flex gap-3 flex-wrap align-items-start"  aos-delay="500" style="margin-top: 2rem;">
+                <div data-aos="fade-up" id="rakha-algiva" class="team-member-">
+                    <img src="asset/img/justin beiber.jpg" alt="Rakha-Al-giva" class="img-fluid rounded" style="width: 200px; height: 300px;" data-aos="fade-right" aos-delay="500">
+                </div>
+                <div data-aos="fade-up" id="akram-algiva" class="team-member-">
+                    <img src="asset/img/emir mahira barazakky.jpeg" alt="Akram-Al-giva" class="img-fluid rounded" style="width: 200px; height: 300px;" data-aos="fade-right" aos-delay="200">
+                </div>
+                <div data-aos="fade-up" id="faheem-algiva" class="team-member-">
+                    <img src="asset/img/orang dalam.jpg" alt="Faheem-Al-giva" class="img-fluid rounded" style="width: 200px; height: 300px;" data-aos="fade-right" aos-delay="300">
+                </div>
+                <div data-aos="fade-up" id="umar-algiva" class="team-member-">
+                    <img src="asset/img/faraz.jpg" alt="Umar-Al-giva" class="img-fluid rounded" style="width: 200px; height: 300px;" data-aos="fade-right" aos-delay="400">
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+
+    <section class="container py-2">
+        <div class="row align-items-center" data-aos="fade-up">
+            <div class="col-12 text-center mb-4">
+            <h3 class="fw-bold text-white">Anggota Team Al Giva</h3>
+            </div>
+
+            <!-- anggota 1 -->
+            <div class="col-6 col-md-2 text-center mb-3">
+            <img src="asset/img/justin beiber 1.jpg" alt="Rakha Maulana" class="rounded-circle team-photo">
+            <div class="text-white mt-2">1. Rakha Maulana Raziq Tisnanda Siregar</div>
+            </div>
+
+            <!-- anggota 2 -->
+            <div class="col-6 col-md-2 text-center mb-3">
+            <img src="asset/img/emir mahira barazakky 2.jpeg" alt="Fatih Al-Akram" class="rounded-circle team-photo">
+            <div class="text-white mt-2">2. emir mahira barazakky</div>
+            </div>
+
+            <!-- anggota 3 -->
+            <div class="col-6 col-md-2 text-center mb-3">
+            <img src="asset/img/mehaf.jpg" alt="Mohammed Faheem" class="rounded-circle team-photo">
+            <div class="text-white mt-2">3. Mohammed dihibarevant jiazhen Faheem</div>
+            </div>
+            <!-- anggota 4 -->
+            <div class="col-6 col-md-2 text-center mb-3">
+                <img src="asset/img/faraz 1.jpg" alt="Faraz Ahmed" class="rounded-circle team-photo">
+                <div class="text-white mt-2">4. shafaraz Ilhan Dzulfikar</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- materi-->
+    <section class="container py-5">
+        <div class="row align-items-center" data-aos="fade-up">
+            <div class="col-12 text-center mb-4">
+            <h3 class="fw-bold text-white">materi yang diajarkan</h3>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group">
+                   <li class="canva">
+                    <h5 class="text-white">figma (basic)</h5>
+                    <img class="img-fluid mb-3" style="width: 20%; height: 50%;" src="asset/img/figma.png" alt="">
+                </ul>   
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Instagram Style -->
+    <section class="container py-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h3 class="fw-bold text-white">Gallery Kegiatan smkn 14 jakarta</h3>
+        </div>
+        
+        <div class="row g-3" data-aos="fade-up">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/tidaaakk-ketua-osis.jpg" alt="Gallery 1" class="w-100 h-100" style="object-fit:fill;transition:transform 0.3s ease;">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/back.jpg" alt="Gallery 2" class="w-100 h-100" style="object-fit:cover;transition:transform 0.3s ease;">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/nah ini dia.jpg" alt="Gallery 3" class="w-100 h-100" style="object-fit:cover;transition:transform 0.3s ease;">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/smkn14.jpg" alt="Gallery 4" class="w-100 h-100" style="transition:transform 0.3s ease;">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/pinggir.jpg" alt="Gallery 5" class="w-100 h-100" style="object-fit:fill;transition:transform 0.3s ease;">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div style="overflow:hidden;border-radius:12px;aspect-ratio:1/1;background:#333;">
+                    <img src="asset/img/cartoon.jpg" alt="Gallery 6" class="w-100 h-100" style="transition:transform 0.3s ease;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Project JS -->
+    <script src="asset/javascript.js"></script>
+
+</body>
+</html>

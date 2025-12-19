@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SAYA</title>
+    <link rel="icon" type="image/x-icon" href="asset/img/favicon gw.png">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    :root{
+        --gradient: linear-gradient(90deg, rgba(255, 111, 111, 0.966)7.8%, rgb(255, 246, 81) 100.3%);
+    }
+    body{
+      min-height: 100vh; 
+      background-color: aliceblue;
+      background-image: var(--gradient);
+      background-size: 200%;
+      animation: gradientAnimation 2s ease infinite alternate;
+      
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+
+    #me{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 1.5rem;
+
+    
+    }
+
+    #me:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+        text-transform: uppercase;
+
+    }
+
+    
+</style>
+
+<body style="font-family:'Inter', sans-serif;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down">
+       <div class="container">
+            <a  id="me"  class="navbar-brand fw-bold" href="index.html">Rakha Siregar</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" data-aos="fade-down">
+                        <a target="_blank" class="nav-link" href="https://www.tiktok.com/@mebakha_siregar">
+                            <i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i>TikTok
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://github.com/MEBAKHA">
+                            <i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i>GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://youtube.com/@mebakhaaja">
+                            <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff;"></i> YouTube
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://www.instagram.com/mebakha_siregar/">
+                            <i class="fa-brands fa-instagram fa-bounce" style="color: #ffffff;"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+    <!-- ISI PROJECT -->
+    <section id="project" class="project my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-4" data-aos="fade-up">
+                    <h2 class="fw-bold" id="skillsKU">PROJECT SAYA</h2>
+                    <hr class="mx-auto" style="width: 150px; height: 4px; background-color: #000;">
+                </div>
+            </div>
+            <a href="#video" class="btn btn-primary"> design</a> <br><br>
+            <div class="row justify-content-center">
+                
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <a target="_blank" href="https://mebakha.github.io/-LOREM-CAR---website-peminjaman-mobil/login.html" class="reveal">
+                            <img src="asset/img/Screenshot 2025-12-09 101857.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">LOREM CAR</h5>
+                            <p class="card-text"> Website peminjaman mobil Dummy website. meminjam mobil mobil mewah dengan terpercaya.</p>
+                            <a target="_blank" href="https://mebakha.github.io/-LOREM-CAR---website-peminjaman-mobil/login.html" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <a target="_blank" href="https://dixdia.vercel.app/" class="reveal">
+                            <img src="asset/img/dixdia.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">DIXlA</h5>
+                            <p class="card-text"> website Dummy, seperti yang terinspirasi dari steam yang menjual dan mendownload game.</p>
+                            <a target="_blank" href="https://dixdia.vercel.app/" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <a target="_blank" href="https://sgc-easy-learn.online/" class="reveal">
+                            <img src="asset/img/SGC.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">SGC-easylearn</h5>
+                            <p class="card-text">website resmi yang berjalan untuk belajar coding dengan lebih mudah dan cepat, sangat cocok untuk semua orang.</p>
+                            <a target="_blank" href="https://sgc-easy-learn.online/" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- AKHIR web PROJECT -->
+
+    <!--degsain & editing project-->
+    <section id="video" class="video my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mb-4" data-aos="fade-up">
+                    <h2 class="fw-bold" id="skillsKU">DESAIN & EDITING SAYA</h2>
+                    <hr class="mx-auto" style="width: 150px; height: 4px; background-color: #000;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">poster chevaliers x slamdunk</h5>
+                            <img src="asset/img/dwi chesar.png" alt="">
+                            <p class="card-text">iseng iseng edit temen angkatan di idn pamijahan yang suka main basket pake figma</p>
+                            <a target="_blank" href="asset/img/dwi chesar.png" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">poster chevaliers x slamdunk</h5>
+                            <img src="asset/img/L.png" alt="">
+                            <p class="card-text">iseng iseng edit temen angkatan di idn pamijahan yang suka main basket pake figma</p>
+                            <a target="_blank" href="asset/img/L.png" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">poster chevaliers x slamdunk</h5>
+                            <img src="asset/img/HANIF.png" alt="">
+                            <p class="card-text">iseng iseng edit temen angkatan di idn pamijahan yang suka main basket pake figma</p>
+                            <a target="_blank" href="asset/img/HANIF.png" class="btn btn-primary">Lihat Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--akhir degsain & editing project-->
+
+    
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Project JS -->
+    <script src="asset/javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SAYA</title>
+    <link rel="icon" type="image/x-icon" href="asset/img/favicon gw.png">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    :root{
+        --gradient: linear-gradient(90deg, rgba(255, 111, 111, 0.966)7.8%, rgb(255, 246, 81) 100.3%);
+    }
+    body{
+      min-height: 100vh; 
+      background-color: aliceblue;
+      background-image: var(--gradient);
+      background-size: 200%;
+      animation: gradientAnimation 2s ease infinite alternate;
+      
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+
+    #me{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 1.5rem;
+
+    
+    }
+
+    #me:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+        text-transform: uppercase;
+
+    }
+
+    
+</style>
+
+<body style="font-family:'Inter', sans-serif;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down">
+       <div class="container">
+            <a  id="me"  class="navbar-brand fw-bold" href="index.html">Rakha Siregar</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" data-aos="fade-down">
+                        <a target="_blank" class="nav-link" href="https://www.tiktok.com/@mebakha_siregar">
+                            <i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i>TikTok
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://github.com/MEBAKHA">
+                            <i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i>GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://youtube.com/@mebakhaaja">
+                            <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff;"></i> YouTube
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://www.instagram.com/mebakha_siregar/">
+                            <i class="fa-brands fa-instagram fa-bounce" style="color: #ffffff;"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--pop-up semester presensation canva sem1 -->
+    <section class="container py-5">
+        <div class="row align-items-center" data-aos="fade-up">
+            <div class="col-12 text-center mb-4">
+                <h3 class="fw-bold text-white">Semester 1</h3>
+            </div>
+            <div class="col-12">
+                <ul class="list-group">
+                   <li class="canva">
+                    <h5 class="text-white">raport presentation semester 1 IDNBS </h5>
+                    <img class="img-fluid w-50 mb-3" src="asset/img/MY PRESENTATION.jpg" alt="">
+                    <br>
+                    <a target="_blank" href="https://www.canva.com/design/DAG7TYmzHZI/-BjajcTZtzXgZqvtzzqY1w/edit" class="btn btn-primary">Lihat Presensation</a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Project JS -->
+    <script src="asset/javascript.js"></script>
+
+</body>
+</html>

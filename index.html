@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SAYA</title>
+    <link rel="icon" type="image/x-icon" href="asset/img/favicon gw.png">
+      
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+git commit -m "Pesan commit Anda"
+
+</head>
+
+<style>
+    :root{
+        --gradient: linear-gradient(90deg, rgba(255, 111, 111, 0.966)7.8%, rgb(255, 246, 81) 100.3%);
+    }
+    body{
+      min-height: 100vh; 
+      background-color: aliceblue;
+      background-image: var(--gradient);
+      background-size: 200%;
+      animation: gradientAnimation 2s ease infinite alternate;
+      
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+
+    #me{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 1.5rem;
+
+    
+    }
+
+    #me:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+        text-transform: uppercase;
+
+    }
+
+    
+</style>
+
+<body style="font-family:'Inter', sans-serif;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down">
+       <div class="container">
+            <a  id="me"  class="navbar-brand fw-bold" href="#">Rakha Siregar</a>
+                <button id="star-button" class="btn btn-warning me-3">
+                star mode 
+                <i class="fa-solid fa-star"></i>
+            </button>
+
+            <!-- canvas untuk background -->
+            <canvas id="star"></canvas>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" data-aos="fade-down">
+                        <a target="_blank" class="nav-link" href="https://www.tiktok.com/@mebakha_siregar">
+                            <i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i>TikTok
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://github.com/MEBAKHA">
+                            <i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i>GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://youtube.com/@mebakhaaja">
+                            <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff;"></i> YouTube
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://www.instagram.com/mebakha_siregar/">
+                            <i class="fa-brands fa-instagram fa-bounce" style="color: #ffffff;"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <div class="container py-5">
+        <div class="row align-items-center" data-aos="fade-up">
+            
+            <!-- Kiri -->
+            <div class="col-md-6 mb-4">
+                <h1 class="fw-bold text-white " style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Assalamualaikum, Nama aku Rakha Maulana Raziq Tisnanda Siregar 👌</h1>
+                <p>
+                    <h5 class="bg-warning mb-3 ">-Bandung, 11 Februari 2010-</h5>
+                    aku adalah pelajar smk yang bersekolah di IDNBS Pamijahan Bogor, Jawa barat. mengambil jurusan Rekayasa Perangkat Lunak Aku juga seorang Youtuber pemula yang membuat konten tentang Experiment, Random, Dll tentang IT. nama channel youtube ku adalah 
+                     <b>Mebakha Siregar</b>.
+                </p>
+                
+                <button id="about-PORTOFOLIO" 
+                 class="btn btn-primary fw-bold mt-3 mb-3"
+                 data-aos="fade-down">
+                    about PORTOFOLIO
+                </button>
+
+                <div class="d-flex gap-3 flex-wrap mt-4" >
+                    
+                    <a href="#skills" class="btn btn-primary">
+                        <i class="fa-solid fa-code"></i> Skill
+                    </a>
+
+                    <a href="https://saweria.co/mebakhasiregar" target="_blank" class="btn btn-success">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i> Donation
+                    </a>
+
+                    <a id="download-button" class="btn btn-warning">
+                        <i class="fa-solid fa-download"></i> my cv
+                    </a>
+
+                    <a href="#experience" class="btn btn-info text-white">
+                        <i class="fa-solid fa-camera"></i> Experience
+                    </a>
+
+                    <a href="project.html" class="btn btn-danger">
+                      <i class="fa-solid fa-diagram-project" style="color: #ffffff;"></i>Project
+                    </a>
+                    <a href="persentation.html" class="btn btn-warning">
+                        <i class="fa-solid fa-home"></i> slide presentation
+                    </a>
+
+                </div>
+            </div>
+            <!-- Kanan -->
+            <div class="col-md-6 text-center">
+                <img src="asset/img/orang-terganteng-didudunia.png" class="img-fluid rounded w-100" alt="">
+            </div>
+
+        </div>
+     <!-- riwayat Pendidikan-->
+        <div class="row align-items-center mt-5" data-aos="fade-up">
+                
+                <!-- Kiri -->
+                <div class="col-md-6 d-flex justify-content-between align-items-center gap-3">
+                    <img id="gambar-utama" src="asset/img/WhatsApp Image 2025-06-19 at 19.51.45.jpeg" class="img-fluid rounded shadow w-50" alt="">
+                    <img src="asset/img/rakha-skom.png" class="img-fluid rounded shadow w-50 h-50" alt="">
+                </div>
+    
+                <!-- Kanan -->
+                <div class="col-md-6 mb-4">
+                    <h2 class="fw-bold text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Riwayat Pendidikan</h2>
+                    <ul>
+                        <li><b>SDIT Istiqomah Lembang</b> (2016 - 2017)</li>
+                        <li><b>SDIT AIS (AL-AMANAH ISLAMIC SCHOOL)</b> (2017 - 2022)</li>
+                        <li><b>MTS  AIS (AL-AMANAH ISLAMIC SCHOOL)</b> (2022 - 2025)</li>
+                        <li><b>SMK IDNBS Pamijahan Bogor <article class="fw-bold">mengambil jurusan RPL (Rekayasa Perangkat Lunak)</article></b> (2025 - Sekarang)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="container py-5">
+        <h2 id="skillsKU" class="fw-bold text-center mb-4" data-aos="zoom-out-up">My Skills </h2>
+        <p class="text-center" data-aos="zoom-out-up">this is my skills I can say is my personality, but is in real life</p>
+      
+        <div id="My-skills">
+            <div class="row text-center g-4 mt-4" data-aos="fade-up" data-aos-duration="3000">
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/html.png" class="img-fluid w-50" alt="">
+                    <p>HTML</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 95%">95%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/OBS.png" class="img-fluid w-50" alt="">
+                    <p>OBS Studio</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 100%">100%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/Roblox studi.png" class="img-fluid w-50" alt="">
+                    <p>Roblox Studio</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 50%">50%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/css-3-logo-png_seeklogo-297888.png" class="img-fluid w-50" alt="">
+                    <p>CSS</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 80%">80%</div>
+                    </div>
+                </div>
+
+               <div class="col-6 col-md-2">
+                    <img src="asset/img/JS.png" class="img-fluid w-50" alt="">
+                    <p>JavaScript</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 65%">65%</div>
+                    </div>
+                </div>
+
+                    <div class="col-6 col-md-2">
+                        <img src="asset/img/Bootstrap.png" class="img-fluid w-50" alt="">
+                        <p>Bootstrap</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning " style="width: 90%">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <img src="asset/img/php.png" class="img-fluid w-50" alt="">
+                        <p>PHP</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning " style="width: 60%">60%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <img src="asset/img/Laravel.png" class="img-fluid w-50" alt="">
+                        <p>Laravel</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning " style="width: 75%">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                        <img src="asset/img/MYSQL.png" class="img-fluid w-50" alt="">
+                        <p>MySQL</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-warning " style="width: 50%">50%</div>
+                        </div>
+                    </div>
+
+
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/Blogger.png" class="img-fluid w-50" alt="">
+                    <p>Blogger</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 90%">90%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/figma.png" class="img-fluid w-50" alt="">
+                    <p>Figma</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 85%">85%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/Canva.png" class="img-fluid w-50" alt="">
+                    <p>Canva</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 100%">100%</div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <img src="asset/img/Capcut.png" class="img-fluid w-50" alt="">
+                    <p>Capcut</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning " style="width: 100%">100%</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+            
+    </section>
+
+    <!-- sertifikat-->
+    <section id="sertifikat" class="container py-5">
+        <h2 class="fw-bold text-center mb-4">Sertifikat</h2>
+        <div class="row g-4 d-flex justify-content-center align-items-center">
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card p-3 text-center shadow">
+                    <iframe src="asset/img/sertifkat_merged.pdf" frameborder="0"></iframe>
+                    <h5 class="fw-bold">Certificate</h5>
+                    <p class="text-muted">2025</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sertifikat end-->
+
+    <!-- Achievmend-->
+    <section id="achievement" class="container py-5">
+        <h2 class="fw-bold text-center mb-4">Achievement</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card p-3 text-center shadow">
+                    <img src="asset/img/OSKANAS.png" class="img-fluid" alt="">
+                    <h5 class="fw-bold">MEDALI PERAK</h5>
+                    <article>Supernova 2025 Kategori bahasa inggris</article>
+                    <p class="text-muted">2025</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+
+
+   
+
+    </section>    
+    <!-- Achievmend end-->
+
+        <!--experience-->
+        <section id="experience" class="container py-5">
+            <h2 id="ExperienceKU" class="fw-bold text-center mb-4">My experience</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="asset/img/sampul Sekolah Alam Al-Giva.png" class="card-img-top" alt="Sekolah Alam Al-Giva">
+                        <div class="card-body">
+                            <h5 class="card-title">IDN Teaching to : Sekolah Alam Al-Giva</h5>
+                            <p class="text-warning-emphasis fs-6">2025</p>
+                            <p class="card-text">Jalan Parfi No.3, RT.01/RW.08, Curug, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16113</p>
+                            <a href="al-giva.html" class="btn btn-success fw-bold shadow-sm">lihat selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="asset/img/AL-GHAZALI.png" class="card-img-top" alt="Madrasah Imam Al-Ghazali">
+                        <div class="card-body">
+                            <h5 class="card-title">IDN Teaching to : Madrasah Imam Al-Ghazali</h5>
+                            <p class="text-warning-emphasis fs-6">2025</p>
+                            <p class="card-text">Biru, Majalaya, Bandung Regency, West Java 40392</p>
+                            <a href="al-ghozali.html" class="btn btn-success fw-bold shadow-sm">lihat selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="asset/img/smk 14 jakarta (1).png" class="card-img-top" alt="SMK 14 Jakarta">
+                        <div class="card-body">
+                            <h5 class="card-title">IDN Teaching to : SMK negeri 14 Jakarta</h5>
+                            <p class="text-warning-emphasis fs-6">2025</p>
+                            <p class="card-text">Jl. Percetakan Negara IIA No.2, RT.11/RW.6, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560</p>
+                            <a href="smkn14jakarta.html" class="btn btn-success fw-bold shadow-sm">lihat selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- experience end-->
+         <!-- contact me-->
+        <section id="contact" class="contact my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center mb-4" data-aos="fade-up">
+                        <h2 class="fw-bold" id="contactKU">HUBUNGI SAYA</h2>
+                        <hr class="mx-auto" style="width: 150px; height: 4px; background-color: #000;">
+                    </div>
+                </div>
+                <div class="row align-items-start g-4">
+                    <div class="col-12 col-md-6" data-aos="zoom-in">
+                        <h5>Alamat:</h5>
+                        <p>Jl. Kayu Ambon No.82, Kayuambon, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391</p>
+                        <h5>Email:</h5>
+                        <p>Koboycilok@gmail.com</p>
+                        <h5>Telepon:</h5>
+                        <p>+62 085220278722</p>
+                    </div>
+
+                    <div class="col-12 col-md-6" data-aos="zoom-in">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Masukkan email Anda" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Tulis pesan Anda di sini" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!--akhir contact me-->
+       
+
+    
+            
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Project JS -->
+    <script src="asset/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</body>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        emailjs.init("Z0An0YtRNArSEg3Is"); // PUBLIC KEY
+
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.send(
+                "mebakha1105",        // SERVICE ID
+                "template_pjzfrgo",   // TEMPLATE ID
+                {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value,
+                }
+            )
+            .then(() => {
+                alert("✅ Pesan berhasil dikirim ke email!");
+                form.reset();
+            })
+            .catch(error => {
+                alert("❌ Gagal mengirim pesan");
+                console.error("EmailJS Error:", error);
+            });
+        });
+
+    });
+</script>
+
+
+
+</html>

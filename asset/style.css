@@ -1,0 +1,442 @@
+
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+nav{
+    background-color:#89a194;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul{
+   gap: 3rem;
+   display: flex;
+   justify-content: center;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+nav a {
+    padding: 0.5rem;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+/*hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    background-color: #dec584;
+    padding: 5rem 1rem 3rem 2rem ;
+    
+
+}
+
+.kiri{
+    width: 60%;
+    
+}
+
+.kanan{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.kanan img{
+    width: 300px;
+     border-radius: 2rem 5rem 2rem 5rem;
+
+     
+}
+
+.button{
+    display: flex;
+    gap: 2rem;
+
+}
+.button a{
+    text-decoration: none;
+    color: rgb(51, 146, 224);
+    border: 2px solid RGB(51, 146, 224);
+    padding: 0.6rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    
+}
+.button a:hover{
+    background-color: cornflowerblue;
+    color: crimson;
+}
+
+#skills{
+    text-align: center;
+    background-color: #fff; /* putih */
+    padding: 2rem 0;
+}
+
+#skills h2{
+    font-size: 35px;
+    
+}
+
+/* skill item boxes: center content and add green outline */
+#skills .row > [class*="col-"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #0a7a3f; /* dark green outline */
+   
+}
+
+#skills img{
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#skills p{
+    margin: 0.5rem 0 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+#skills .progress{
+    width: 160px;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill img{
+    width: 30px;
+
+}
+
+
+.skill{
+    border: 2px solid rgb(255, 255, 255);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+ .skills-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+ }
+
+ /*testimoni*/
+ #testimoni h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    
+}
+
+.testimoni-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+
+.profil-card img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.profil-card{
+    background-color: ghostwhite;
+    border: 1rem;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimoni-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1rem;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: cornsilk;
+  box-shadow: 0 4px 12px rgba (0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 300px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-info h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+}
+
+.profile-info .title {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.profile-info .message {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+    }
+
+    .menu a{
+        font-size: small;
+        margin: 4rem;
+    }
+
+        #hero{
+            flex-direction: column-reverse;
+            padding: 1rem;
+
+        }
+
+        .kiri{
+            width: 100%;
+        }
+
+        .kanan{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button{
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+    
+    }
+    
+    /*maps*/
+    iframe{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 9 rem 10rem 1rem;
+        background-color: brown;
+        box-shadow: #89a194;
+       
+    }
+
+    .card{
+        padding: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        
+            
+    }
+
+    .card:hover {
+      box-shadow:  px 50px rgb(17, 123, 244);
+      transform: translateY(-5px);
+      background-color: #ff6f00;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      box-shadow: 0 8px 8px rgb(0, 94, 255);
+      transform: translateY(-5px);
+    }
+
+   #skillsKU {
+        font-size: 28px;
+        transition: transform 0.3s ease,text-transform 0.3s ease, background-color 0.3s ease;
+    }
+    #skillsKU:hover {
+        text-transform: uppercase;
+        background-color: #ff6f00;
+        transform: translateY(-5px);
+    }
+        
+    #about-PORTOFOLIO {
+        font-size: 20px;
+        transition: transform 0.3s ease,text-transform 0.3s ease, background-color 0.3s ease;
+    }
+    #about-PORTOFOLIO:hover {
+        text-transform: uppercase;
+        background-color: #ff6f00;
+        transform: translateY(-5px);
+    }
+
+ .btn{
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+ 
+}
+
+.btn:hover {
+  box-shadow: 0 8px 8px rgb(0, 94, 255);
+  transform: translate3d();
+  background-color: #ff6f00;
+}
+
+.card .btn{
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn:hover {
+  box-shadow:  20px 20px rgb(0, 94, 255);
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  color: black;
+  
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+#star {
+    position: fixed;
+    inset: 0; /* top:0; left:0; width:100%; height:100%; */
+    z-index: -1;
+    display: none;
+    pointer-events: none;
+}
+
+#rakha-algiva{
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+#rakha-algiva:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  filter: sepia(100%) hue-rotate(90deg) ;
+}
+
+#akram-algiva{
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease ;
+}
+
+#akram-algiva:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  filter: sepia(100%) hue-rotate(270deg) ;
+}
+
+#faheem-algiva{
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease ;
+}
+
+#faheem-algiva:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  filter: sepia(100%) hue-rotate(180deg) ;
+}
+
+#umar-algiva{
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease ;
+}
+
+#umar-algiva:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  filter: sepia(100%) hue-rotate(360deg) ;
+}
+
+#faraz-algiva{
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease ;
+}
+#faraz-algiva:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  filter: sepia(100%) hue-rotate(45deg) ;
+}
+
+
+    
+  
+
+/* Team images: reduce corner curvature (smaller rounded corners) */
+#team-algiva img {
+        border-radius: 8px !important; /* smaller curve */
+        /* keep existing sizing or use object-fit to preserve aspect */
+        object-fit: cover;
+}
+
+
+
+
+
